@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700;800&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-image: url('/assets/bacground.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+
+/* klasement */
+.judul_klasement {
+    text-align: center;
+    margin: 50px 0px;
+}
+
+
+.thead, .tbody{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+    border: 1px solid rgb(199, 196, 196);
+    box-shadow: 0 4px 8px rgba(139, 138, 138, 0.4);
+}
+
+.thead h5, .tbody h6 {
+    padding : 10px;
+}
+
+.nomor_clasement {
+    border-end-start-radius: 15px;
+    background-color: #00BFFF;
+    color: white
+
+}
+
+/* klub */
+
+/* skor */
+
+
+
+
+
