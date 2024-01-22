@@ -20,10 +20,11 @@
 
     {{-- data klub --}}
     <thead>
-        <tr>
+        <tr class="text-center">
             <th scope="col">#</th>
             <th scope="col">Nama Klub</th>
             <th scope="col">Skor</th>
+            <th scope="col">VS</th>
             <th scope="col">Nama Klub</th>
             <th scope="col">Skor</th>
         </tr>
@@ -34,10 +35,11 @@
         @endphp
 
         @forelse ($skor as $item)
-            <tr>
+            <tr class="text-center">
                 <th scope="row">{{ ++$index }}</th>
                 <td>{{ $item->klub->nama_klub}}</td>
                 <td>{{ $item->skor }}</td>
+                <td class="table-danger">vs</td>
                 <td>{{ $item->klub_lawan->nama_klub }}</td>
                 <td>{{ $item->skor_lawan }}</td>
                 

@@ -236,13 +236,14 @@ class SkorController extends Controller
                 if ($klubSkor > $klubSkorLawan) {
                     $klasemenUpdates['ME'] = $klasemenMALawan->ME + 1;
                     $klasemenUpdates['GM'] = $klasemenMALawan->GM + $klubSkor;
+                    $klasemenUpdates['poin'] = $klasemenMALawan->poin + 3;
                 } elseif ($klubSkor == $klubSkorLawan) {
                     $klasemenUpdates['S'] = $klasemenMALawan->S + 1;
                     $klasemenUpdates['poin'] = $klasemenMALawan->poin + 1;
                 } else {
                     $klasemenUpdates['K'] = $klasemenMALawan->K + 1;
                     $klasemenUpdates['GK'] = $klasemenMALawan->GK + $klubSkor;
-                    $klasemenUpdates['poin'] = $klasemenMALawan->poin + 3;
+                    
                 }
         
                 $klasemenMALawan->update($klasemenUpdates);
